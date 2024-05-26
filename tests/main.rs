@@ -1,6 +1,6 @@
 use anyhow::Result;
-use bedrock_auth::{xbox_auth, AuthOption, Client, XSTSToken};
 use std::path::Path;
+use xbl_auth::{xbox_auth, AuthOption, Client, XSTSToken};
 #[tokio::test]
 async fn main() -> Result<()> {
     let client = Client::new();
